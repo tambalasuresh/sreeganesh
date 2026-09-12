@@ -29,16 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // 2. Active Navbar link indicator on scroll
+    // 2. Active Navbar link indicator & scroll header blur
     window.addEventListener("scroll", function () {
         const sections = document.querySelectorAll("section");
         const navLinks = document.querySelectorAll(".nav-link");
         const navbar = document.getElementById("navbar");
 
-        if (window.scrollY > 50) {
-            navbar.style.boxShadow = "0 8px 20px rgba(0,0,0,0.1)";
+        if (window.scrollY > 40) {
+            navbar.classList.add("scrolled");
         } else {
-            navbar.style.boxShadow = "var(--shadow-sm)";
+            navbar.classList.remove("scrolled");
         }
 
         let currentSectionId = "";
@@ -57,7 +57,32 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    // 3. Scroll Reveal Observer with Staggering
+    initScrollAnimations();
 });
+
+function initScrollAnimations() {
+    const revealElements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale");
+
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px 0px -50px 0px",
+        threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                // Option: unobserve once revealed for performance
+                // observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    revealElements.forEach(el => observer.observe(el));
+}
 
 // Modal Functions
 function openBookingModal(serviceName) {
