@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sree Gaanasree Enterprises | Appliance Repair & Service Bengaluru</title>
+    <meta name="description" content="Expert Micro Oven, Water Geyser, and Washing Machine Repair & Service in Wilson Garden, Bengaluru. Call +91 78992 06046 for fast doorstep service.">
+    <meta name="keywords" content="Micro Oven Repair, Water Geyser Service, Washing Machine Repair Bengaluru, Wilson Garden Appliance Repair, Sree Gaanasree Enterprises">
+    <meta name="theme-color" content="#0A2540">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-info">
+                <span><i class="fa-solid fa-location-dot"></i> 1st Cross, Lakkasandra, Wilson Garden, Bengaluru - 560030</span>
+                <span><i class="fa-solid fa-clock"></i> Mon - Sun: 8:00 AM - 9:00 PM</span>
+            </div>
+            <div class="top-bar-contact">
+                <a href="tel:+917899206046" class="top-phone"><i class="fa-solid fa-phone"></i> +91 78992 06046</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">SREE GAANASREE</span>
+                    <span class="brand-subtitle">ENTERPRISES</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#why-us" class="nav-link">Why Choose Us</a>
+                <a href="#rate-card" class="nav-link">Pricing</a>
+                <a href="#coverage" class="nav-link">Service Areas</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="tel:+917899206046" class="btn btn-call-header">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+                <button class="btn btn-whatsapp-header" onclick="openBookingModal('General Appliance Service')">
+                    <i class="fa-brands fa-whatsapp"></i> Book Service
+                </button>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-tag">
+                    <i class="fa-solid fa-shield-halved"></i> Bengaluru's Trusted Appliance Experts
+                </div>
+                <h1 class="hero-title">Doorstep Repair & Service For <span>Micro Oven, Geyser & Washing Machine</span></h1>
+                <p class="hero-desc">
+                    Fast, reliable, and affordable repair services at your home. Skilled technicians with genuine spare parts and warranty on every repair in Wilson Garden & all across Bengaluru!
+                </p>
+
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <div class="hl-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <div>
+                            <strong>30-60 Mins</strong>
+                            <span>Quick Doorstep Arrival</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="hl-icon"><i class="fa-solid fa-user-gear"></i></div>
+                        <div>
+                            <strong>100% Verified</strong>
+                            <span>Expert Technicians</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="hl-icon"><i class="fa-solid fa-award"></i></div>
+                        <div>
+                            <strong>Quality Service</strong>
+                            <span>Guarantee Assured</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta-buttons">
+                    <button class="btn btn-primary btn-lg pulse-btn" onclick="openBookingModal('General Appliance')">
+                        <i class="fa-brands fa-whatsapp"></i> Book Service On Mobile
+                    </button>
+                    <a href="tel:+917899206046" class="btn btn-outline-light btn-lg">
+                        <i class="fa-solid fa-phone-volume"></i> Call +91 78992 06046
+                    </a>
+                </div>
+            </div>
+
+            <!-- Visiting Card Replica Display Badge -->
+            <div class="hero-card-preview">
+                <div class="visiting-card-container">
+                    <div class="vc-header">
+                        <div class="vc-icons">
+                            <i class="fa-solid fa-microchip"></i>
+                            <i class="fa-solid fa-water"></i>
+                            <i class="fa-solid fa-soap"></i>
+                        </div>
+                        <h2 class="vc-title">SREE GAANASREE</h2>
+                        <h3 class="vc-subtitle">ENTERPRISES</h3>
+                        <p class="vc-tagline">All type of Micro Oven, Water Geyser, Washing Machine Repair & Service done here</p>
+                    </div>
+
+                    <div class="vc-appliance-grid">
+                        <div class="vc-app-box" onclick="openBookingModal('Micro Oven Repair')">
+                            <div class="app-img-wrap">
+                                <i class="fa-solid fa-box"></i>
+                            </div>
+                            <span>MICRO OVEN</span>
+                        </div>
+                        <div class="vc-app-box" onclick="openBookingModal('Water Geyser Repair')">
+                            <div class="app-img-wrap">
+                                <i class="fa-solid fa-temperature-arrow-up"></i>
+                            </div>
+                            <span>GEYSER</span>
+                        </div>
+                        <div class="vc-app-box" onclick="openBookingModal('Washing Machine Repair')">
+                            <div class="app-img-wrap">
+                                <i class="fa-solid fa-soap"></i>
+                            </div>
+                            <span>WASHING MACHINE</span>
+                        </div>
+                    </div>
+
+                    <div class="vc-badges-row">
+                        <div class="vc-badge">
+                            <i class="fa-solid fa-user-check"></i>
+                            <span>EXPERT<br>TECHNICIANS</span>
+                        </div>
+                        <div class="vc-badge">
+                            <i class="fa-solid fa-star"></i>
+                            <span>QUALITY<br>SERVICE</span>
+                        </div>
+                        <div class="vc-badge">
+                            <i class="fa-solid fa-stopwatch"></i>
+                            <span>FAST & RELIABLE<br>SERVICE</span>
+                        </div>
+                    </div>
+
+                    <div class="vc-footer">
+                        <div class="vc-address">
+                            <i class="fa-solid fa-location-dot"></i> 1st Cross, Lakkasandra, Wilson Garden, Bengaluru - 560030
+                        </div>
+                        <a href="tel:+917899206046" class="vc-phone-btn">
+                            <i class="fa-solid fa-phone"></i> Mobile: +91 78992 06046
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Badges Strip -->
+    <section class="trust-strip">
+        <div class="container trust-grid">
+            <div class="trust-card">
+                <div class="tc-icon"><i class="fa-solid fa-user-shield"></i></div>
+                <div class="tc-text">
+                    <h4>EXPERT TECHNICIANS</h4>
+                    <p>Background checked, certified & experienced local professionals.</p>
+                </div>
+            </div>
+            <div class="trust-card">
+                <div class="tc-icon"><i class="fa-solid fa-medal"></i></div>
+                <div class="tc-text">
+                    <h4>QUALITY SERVICE</h4>
+                    <p>100% Genuine spare parts with service warranty.</p>
+                </div>
+            </div>
+            <div class="trust-card">
+                <div class="tc-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                <div class="tc-text">
+                    <h4>FAST & RELIABLE SERVICE</h4>
+                    <p>Same-day doorstep delivery within 30-60 minutes in Bengaluru.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">What We Repair</span>
+                <h2 class="main-heading">Our Specialized Repair & Maintenance Services</h2>
+                <p class="section-desc">Click on any service to directly book an expert technician on your phone via Call or WhatsApp.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1: Microwave Oven -->
+                <div class="service-card">
+                    <div class="card-badge">Popular Service</div>
+                    <div class="service-icon-bg">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                    <h3>Micro Oven Repair & Service</h3>
+                    <p class="service-tagline">All brands: IFB, LG, Samsung, Whirlpool, Godrej, Panasonic & more.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Heating Issue & Magnetron Replacement</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Touchpad & Display Repair</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Door Switch & Sparking Issue Fix</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Power Supply / PCB Circuit Repair</li>
+                    </ul>
+                    <div class="service-footer">
+                        <div class="price-start">Inspection Fee: <span>₹199</span></div>
+                        <div class="card-buttons">
+                            <a href="tel:+917899206046" class="btn btn-sm btn-phone"><i class="fa-solid fa-phone"></i> Call</a>
+                            <button class="btn btn-sm btn-primary" onclick="openBookingModal('Micro Oven Repair')">
+                                <i class="fa-brands fa-whatsapp"></i> Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Water Geyser -->
+                <div class="service-card highlight-card">
+                    <div class="card-badge badge-blue">Best Seller</div>
+                    <div class="service-icon-bg">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                    </div>
+                    <h3>Water Geyser Repair & Service</h3>
+                    <p class="service-tagline">Storage Geysers, Instant Geysers & Gas Geysers (AO Smith, Racold, V-Guard, Havells, Bajaj).</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Heating Coil & Element Replacement</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Thermostat & Auto-Cut Fault Repair</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Tank Leakage & Descaling Cleaning</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Instant Installation & Uninstallation</li>
+                    </ul>
+                    <div class="service-footer">
+                        <div class="price-start">Inspection Fee: <span>₹199</span></div>
+                        <div class="card-buttons">
+                            <a href="tel:+917899206046" class="btn btn-sm btn-phone"><i class="fa-solid fa-phone"></i> Call</a>
+                            <button class="btn btn-sm btn-primary" onclick="openBookingModal('Water Geyser Repair')">
+                                <i class="fa-brands fa-whatsapp"></i> Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Washing Machine -->
+                <div class="service-card">
+                    <div class="card-badge">High Demand</div>
+                    <div class="service-icon-bg">
+                        <i class="fa-solid fa-soap"></i>
+                    </div>
+                    <h3>Washing Machine Repair</h3>
+                    <p class="service-tagline">Front Load, Top Load, Semi-Automatic & Fully Automatic Machines.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Drum Not Spinning / Excessive Noise</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Water Drainage & Inlet Pump Fix</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Motor, Belt & Bearing Replacement</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Mainboard / PCB Board Repair</li>
+                    </ul>
+                    <div class="service-footer">
+                        <div class="price-start">Inspection Fee: <span>₹199</span></div>
+                        <div class="card-buttons">
+                            <a href="tel:+917899206046" class="btn btn-sm btn-phone"><i class="fa-solid fa-phone"></i> Call</a>
+                            <button class="btn btn-sm btn-primary" onclick="openBookingModal('Washing Machine Repair')">
+                                <i class="fa-brands fa-whatsapp"></i> Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Services -->
+                <div class="service-card">
+                    <div class="service-icon-bg">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <h3>Refrigerator Service</h3>
+                    <p class="service-tagline">Single Door, Double Door & Side-by-Side Fridges.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Cooling Issue & Gas Refilling</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Compressor & Relay Replacement</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Thermostat & Defrost Sensor Repair</li>
+                    </ul>
+                    <div class="service-footer">
+                        <div class="price-start">Inspection Fee: <span>₹199</span></div>
+                        <div class="card-buttons">
+                            <a href="tel:+917899206046" class="btn btn-sm btn-phone"><i class="fa-solid fa-phone"></i> Call</a>
+                            <button class="btn btn-sm btn-primary" onclick="openBookingModal('Refrigerator Repair')">
+                                <i class="fa-brands fa-whatsapp"></i> Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us-section" id="why-us">
+        <div class="container">
+            <div class="why-us-wrapper">
+                <div class="why-us-info">
+                    <span class="sub-heading white-sub">Why Choose Sree Gaanasree Enterprises?</span>
+                    <h2 class="main-heading text-white">Bengaluru's Most Reliable Doorstep Appliance Care</h2>
+                    <p class="text-white-80">
+                        We take pride in delivering quick, transparent, and top-quality repair services directly at your doorstep in Bengaluru. No extra hidden charges!
+                    </p>
+
+                    <div class="features-list">
+                        <div class="feature-box">
+                            <div class="fb-icon"><i class="fa-solid fa-wrench"></i></div>
+                            <div>
+                                <h5>Experienced Technicians</h5>
+                                <p>Over 10+ years of expertise handling all major appliance brands.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-box">
+                            <div class="fb-icon"><i class="fa-solid fa-tag"></i></div>
+                            <div>
+                                <h5>Transparent Pricing</h5>
+                                <p>Affordable repair charges with upfront quotation before starting work.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-box">
+                            <div class="fb-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                            <div>
+                                <h5>Quick Response Time</h5>
+                                <p>Doorstep reach within 30-60 minutes across Wilson Garden & nearby areas.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-box">
+                            <div class="fb-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                            <div>
+                                <h5>Genuine Parts & Warranty</h5>
+                                <p>Only authentic replacement spare parts used with service guarantee.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-callout-card">
+                    <div class="qc-content">
+                        <i class="fa-solid fa-headset qc-big-icon"></i>
+                        <h3>Emergency Repair Needed?</h3>
+                        <p>Our expert technicians are available for same-day urgent doorstep repair across Bengaluru.</p>
+                        
+                        <div class="qc-number-box">
+                            <span>Direct Mobile Number:</span>
+                            <a href="tel:+917899206046" class="qc-phone">+91 78992 06046</a>
+                        </div>
+
+                        <div class="qc-actions">
+                            <a href="tel:+917899206046" class="btn btn-call-full">
+                                <i class="fa-solid fa-phone"></i> Direct Call Now
+                            </a>
+                            <button class="btn btn-wa-full" onclick="openBookingModal('Urgent Doorstep Repair')">
+                                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Service Charges / Rate Card -->
+    <section class="rate-card-section" id="rate-card">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">Transparent Rates</span>
+                <h2 class="main-heading">Service Rates & Inspection Charges</h2>
+                <p class="section-desc">Fair, competitive, and honest pricing for all your home appliances.</p>
+            </div>
+
+            <div class="rate-grid">
+                <div class="rate-box">
+                    <div class="rate-header">
+                        <h4>Micro Oven</h4>
+                        <div class="rate-price">₹199 <span>visit fee</span></div>
+                    </div>
+                    <ul class="rate-details">
+                        <li>General Servicing & Cleaning</li>
+                        <li>Magnetron / Diode Repair</li>
+                        <li>Touchpad / Switch Replacement</li>
+                        <li>PCB Board Diagnostics</li>
+                    </ul>
+                    <button class="btn btn-outline-primary btn-block" onclick="openBookingModal('Micro Oven Repair')">Book Micro Oven</button>
+                </div>
+
+                <div class="rate-box popular-rate">
+                    <div class="popular-ribbon">Most Requested</div>
+                    <div class="rate-header">
+                        <h4>Water Geyser</h4>
+                        <div class="rate-price">₹199 <span>visit fee</span></div>
+                    </div>
+                    <ul class="rate-details">
+                        <li>Thermostat & Heating Element Fix</li>
+                        <li>Water Leakage & Gasket Fix</li>
+                        <li>Descaling & Tank Cleaning</li>
+                        <li>New Geyser Installation</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block" onclick="openBookingModal('Water Geyser Repair')">Book Geyser Service</button>
+                </div>
+
+                <div class="rate-box">
+                    <div class="rate-header">
+                        <h4>Washing Machine</h4>
+                        <div class="rate-price">₹199 <span>visit fee</span></div>
+                    </div>
+                    <ul class="rate-details">
+                        <li>Spinning / Agitator Repair</li>
+                        <li>Water Inlet & Outlet Valve Fix</li>
+                        <li>Motor & Belt Replacement</li>
+                        <li>Full Machine Overhaul</li>
+                    </ul>
+                    <button class="btn btn-outline-primary btn-block" onclick="openBookingModal('Washing Machine Repair')">Book Washing Machine</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Coverage Areas -->
+    <section class="coverage-section" id="coverage">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">Service Locations</span>
+                <h2 class="main-heading">Serving Wilson Garden & Nearby Bengaluru Areas</h2>
+                <p class="section-desc">We offer fast doorstep technician repair services in the following locations:</p>
+            </div>
+
+            <div class="location-tags">
+                <span class="loc-tag active-tag"><i class="fa-solid fa-location-dot"></i> Wilson Garden</span>
+                <span class="loc-tag active-tag"><i class="fa-solid fa-location-dot"></i> Lakkasandra</span>
+                <span class="loc-tag"><i class="fa-solid fa-location-dot"></i> Koramangala</span>
+                <span class="loc-tag"><i class="fa-solid fa-location-dot"></i> BTM Layout</span>
+                <span class="loc-tag"><i class="fa-solid fa-location-dot"></i> Jayanagar</span>
+                <span class="loc-tag"><i class="fa-solid fa-location-dot"></i> HSR Layout</span>
+                <span class="loc-tag"><i class="fa-solid fa-location-dot"></i> Shanti Nagar</span>
+                <span class="loc-tag"><i class="fa-solid fa-location-dot"></i> Adugodi</span>
+                <span class="loc-tag"><i class="fa-solid fa-location-dot"></i> Ejipura</span>
+                <span class="loc-tag"><i class="fa-solid fa-location-dot"></i> Dairy Circle</span>
+                <span class="loc-tag"><i class="fa-solid fa-location-dot"></i> Richmond Town</span>
+                <span class="loc-tag"><i class="fa-solid fa-location-dot"></i> All Bengaluru Areas</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <span class="sub-heading">Contact Details</span>
+                    <h2>Get In Touch Directly</h2>
+                    <p>Need urgent service or have questions? Contact us on our direct phone line or visit our office store in Lakkasandra.</p>
+
+                    <div class="contact-methods">
+                        <a href="tel:+917899206046" class="cm-item">
+                            <div class="cm-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <div>
+                                <strong>Mobile Number</strong>
+                                <p>+91 78992 06046 (Tap to Call)</p>
+                            </div>
+                        </a>
+
+                        <div class="cm-item" onclick="openBookingModal('Direct WhatsApp Request')">
+                            <div class="cm-icon wa-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <strong>WhatsApp Booking</strong>
+                                <p>+91 78992 06046 (Tap to Chat)</p>
+                            </div>
+                        </div>
+
+                        <div class="cm-item">
+                            <div class="cm-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <strong>Shop Address</strong>
+                                <p>1st Cross, Lakkasandra, Wilson Garden, Bengaluru - 560030</p>
+                            </div>
+                        </div>
+
+                        <div class="cm-item">
+                            <div class="cm-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <strong>Working Hours</strong>
+                                <p>Monday - Sunday: 8:00 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Direct Interactive Form -->
+                <div class="contact-form-card">
+                    <h3><i class="fa-solid fa-calendar-check"></i> Book Technician Doorstep Visit</h3>
+                    <p>Fill out the details below to directly connect on Mobile / WhatsApp with our technician!</p>
+
+                    <form id="directBookingForm" onsubmit="handleDirectFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="custName">Your Full Name *</label>
+                            <input type="text" id="custName" class="form-control" placeholder="e.g. Ramesh Kumar" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="custPhone">Your Mobile Number *</label>
+                            <input type="tel" id="custPhone" class="form-control" placeholder="e.g. 9876543210" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceType">Select Appliance Service *</label>
+                            <select id="serviceType" class="form-control" required>
+                                <option value="Micro Oven Repair">Micro Oven Repair & Service</option>
+                                <option value="Water Geyser Repair">Water Geyser Repair & Service</option>
+                                <option value="Washing Machine Repair">Washing Machine Repair & Service</option>
+                                <option value="Refrigerator Repair">Refrigerator Repair & Service</option>
+                                <option value="General Appliance Repair">Other Appliance Service</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="custAddress">Your Area / Address in Bengaluru *</label>
+                            <input type="text" id="custAddress" class="form-control" placeholder="e.g. Wilson Garden, 3rd Main" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="problemDesc">Problem Description (Optional)</label>
+                            <textarea id="problemDesc" class="form-control" rows="2" placeholder="e.g. Geyser not heating, Washing machine noise issue"></textarea>
+                        </div>
+
+                        <div class="form-actions-grid">
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-brands fa-whatsapp"></i> Send Booking via WhatsApp
+                            </button>
+                            <a href="tel:+917899206046" class="btn btn-call-full">
+                                <i class="fa-solid fa-phone"></i> Direct Call +91 78992 06046
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>SREE GAANASREE ENTERPRISES</h3>
+                <p>All type of Micro Oven, Water Geyser, Washing Machine Repair & Service done here.</p>
+                <p class="address-line"><i class="fa-solid fa-location-dot"></i> 1st Cross, Lakkasandra, Wilson Garden, Bengaluru - 560030</p>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Call / WhatsApp Us:</h4>
+                <a href="tel:+917899206046" class="footer-phone-highlight">
+                    <i class="fa-solid fa-phone"></i> +91 78992 06046
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Sree Gaanasree Enterprises. All Rights Reserved. Doorstep Appliance Service Bengaluru.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Mobile Quick Contact Bar (Mobile Responsive Bottom Bar) -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+917899206046" class="bar-btn bar-call">
+            <i class="fa-solid fa-phone-volume"></i> Direct Call
+        </a>
+        <button class="bar-btn bar-wa" onclick="openBookingModal('Quick Mobile Booking')">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Book
+        </button>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal-backdrop" id="bookingModal">
+        <div class="modal-card">
+            <button class="modal-close-btn" onclick="closeBookingModal()">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                    <h3 id="modalServiceTitle">Book Appliance Service</h3>
+                    <p>Direct message to Mobile +91 78992 06046</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form id="modalForm" onsubmit="handleModalSubmit(event)">
+                    <div class="form-group">
+                        <label>Selected Service:</label>
+                        <input type="text" id="modalServiceInput" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalName">Your Name *</label>
+                        <input type="text" id="modalName" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalPhone">Your Mobile Number *</label>
+                        <input type="tel" id="modalPhone" class="form-control" placeholder="Enter 10-digit mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalArea">Location / Address *</label>
+                        <input type="text" id="modalArea" class="form-control" placeholder="Area in Bengaluru (e.g. Wilson Garden)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalTime">Preferred Preferred Visit Time</label>
+                        <select id="modalTime" class="form-control">
+                            <option value="As Soon As Possible (Urgent)">As Soon As Possible (Urgent)</option>
+                            <option value="Today Morning (8 AM - 12 PM)">Today Morning (8 AM - 12 PM)</option>
+                            <option value="Today Afternoon (12 PM - 4 PM)">Today Afternoon (12 PM - 4 PM)</option>
+                            <option value="Today Evening (4 PM - 9 PM)">Today Evening (4 PM - 9 PM)</option>
+                            <option value="Tomorrow">Tomorrow</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">
+                        <i class="fa-brands fa-whatsapp"></i> Proceed to WhatsApp (+91 78992 06046)
+                    </button>
+                    <a href="tel:+917899206046" class="btn btn-call-full mt-2">
+                        <i class="fa-solid fa-phone"></i> Direct Call +91 78992 06046 Instead
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
