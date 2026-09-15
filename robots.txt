@@ -1,0 +1,6 @@
+# Robots.txt for Sree Gaanasree Enterprises
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://tambalasuresh.github.io/sreeganesh/sitemap.xml

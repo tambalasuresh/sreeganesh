@@ -1,0 +1,17 @@
+{
+  "name": "Sree Gaanasree Enterprises - Doorstep Appliance Repair Bengaluru",
+  "short_name": "Sree Gaanasree",
+  "description": "Expert Micro Oven (₹199), Water Geyser (₹199), and Washing Machine (₹249) Repair & Service in Wilson Garden, Bengaluru.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0A2540",
+  "theme_color": "#0A2540",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

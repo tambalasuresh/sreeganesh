@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A2540" />
+      <stop offset="50%" stop-color="#0E468A" />
+      <stop offset="100%" stop-color="#0072CE" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00B4D8" />
+      <stop offset="100%" stop-color="#90E0EF" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)"/>
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#cyanGrad)" stroke-width="16" opacity="0.4"/>
+  <!-- Appliance Gear Wrench Icon -->
+  <g transform="translate(106, 106) scale(0.6)">
+    <path fill="url(#cyanGrad)" d="M470.6 105.4c-12.5-12.5-32.8-12.5-45.3 0l-50.7 50.7 28.7 28.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0l-28.7-28.7-93.5 93.5c1.4 3.7 2.2 7.8 2.2 12.1 0 17.7-14.3 32-32 32s-32-14.3-32-32 14.3-32 32-32c4.3 0 8.4.8 12.1 2.2l93.5-93.5-28.7-28.7c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l28.7 28.7 50.7-50.7c12.5-12.5 12.5-32.8 0-45.3L371.4 3.4c-12.5-12.5-32.8-12.5-45.3 0L275.4 54.1l-28.7-28.7c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l28.7 28.7-93.5 93.5c-3.7-1.4-7.8-2.2-12.1-2.2-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32c0-4.3-.8-8.4-2.2-12.1l93.5-93.5 28.7 28.7c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L297.4 54.1 348 3.4c12.5-12.5 32.8-12.5 45.3 0l77.3 77.3c12.5 12.5 12.5 32.8 0 45.3z"/>
+  </g>
+</svg>
